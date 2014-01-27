@@ -7,9 +7,11 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
 /**
+ * Class ApiController
+ * @package Expo\ApiBundle\Controller
  * @Route("/api")
  */
-class ApiController extends Controller
+class ApiController extends Controller implements ApiTokenControllerInterface
 {
     /**
      * @Route("/photos", name="api_photos")
@@ -26,6 +28,6 @@ class ApiController extends Controller
      */
     public function photosById($id)
     {
-	return '';
+	    return '';
     }
 }
